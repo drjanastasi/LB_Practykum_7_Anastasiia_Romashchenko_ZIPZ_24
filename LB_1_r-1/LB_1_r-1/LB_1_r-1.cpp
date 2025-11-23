@@ -2,9 +2,10 @@
 using namespace System;
 int main(array<System::String^>^ args)
 {
-    String^ first(L"Привiт. Це мiй перший проєкт.");
-    String^ second(L" я мало чого розумiю....Але(!!!) менi дуже цoкаво:)");
-    String^ third(first + L"I" + second);
+    String^ first(L"ГЏГ°ГЁГўiГІ. Г–ГҐ Г¬iГ© ГЇГҐГ°ГёГЁГ© ГЇГ°Г®ВєГЄГІ.");
+    String^ second(L" Гї Г¬Г Г«Г® Г·Г®ГЈГ® Г°Г®Г§ГіГ¬iГѕ....ГЂГ«ГҐ(!!!) Г¬ГҐГ­i Г¤ГіГ¦ГҐ Г¶oГЄГ ГўГ®:)");
+    String^ third(first + L" I " + second);
     Console::WriteLine(third);
     return 0;
 }
+
