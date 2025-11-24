@@ -1,19 +1,19 @@
 #include "pch.h"
 
 using namespace System;
-
 int main(array<System::String^>^ args)
 {
-    Console::Write("Прошу тебе введи цей перший рядочок...:");
+    Console::Write("ГЏГ°Г®ГёГі ГІГҐГЎГҐ ГўГўГҐГ¤ГЁ Г¶ГҐГ© ГЇГҐГ°ГёГЁГ© Г°ГїГ¤Г®Г·Г®ГЄ...:");
     String^ str1 = Console::ReadLine();
-    Console::Write("Не лінися, другий теж треба : ");
+    Console::Write("ГЌГҐ Г«ВіГ­ГЁГ±Гї, Г¤Г°ГіГЈГЁГ© ГІГҐГ¦ ГІГ°ГҐГЎГ  : ");
     String^ str2 = Console::ReadLine();
     int result(String::Compare(str1, str2));
     if (result < 0)
-        Console::WriteLine(L"{0} менше нiж {1}.", str1, str2);
+        Console::WriteLine(L"{0} Г¬ГҐГ­ГёГҐ Г­iГ¦ {1}.", str1, str2);
     else if (result > 0)
-        Console::WriteLine(L"{0} білььше нiж {1}.", str1, str2);
+        Console::WriteLine(L"{0} ГЎВіГ«ГјГјГёГҐ Г­iГ¦ {1}.", str1, str2);
     else
-        Console::WriteLine(L"{0} такий же самий по довжині, як {1}.", str1, str2);
+        Console::WriteLine(L"{0} ГІГ ГЄГЁГ© Г¦ГҐ Г±Г Г¬ГЁГ© ГЇГ® Г¤Г®ГўГ¦ГЁГ­Ві, ГїГЄ {1}.", str1, str2);
     return 0;
 }
+
