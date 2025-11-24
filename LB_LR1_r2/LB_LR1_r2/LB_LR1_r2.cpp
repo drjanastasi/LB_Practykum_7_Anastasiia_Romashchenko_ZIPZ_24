@@ -1,5 +1,4 @@
 #include "pch.h"
-
 using namespace System;
 int main(array<System::String^>^ args)
 {
@@ -16,4 +15,5 @@ int main(array<System::String^>^ args)
         Console::WriteLine(L"{0} òàêèé æå ñàìèé ïî äîâæèí³, ÿê {1}.", str1, str2);
     return 0;
 }
+
 
