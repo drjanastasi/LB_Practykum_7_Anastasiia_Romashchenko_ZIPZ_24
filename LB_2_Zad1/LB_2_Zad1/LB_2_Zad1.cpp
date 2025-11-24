@@ -2,29 +2,29 @@
 using namespace System;
 int main()
 {
-    Console::Write("Введіть кількість водіїв M: ");;
+    Console::Write("Г‚ГўГҐГ¤ВіГІГј ГЄВіГ«ГјГЄВіГ±ГІГј ГўГ®Г¤ВіВїГў M: ");;
     int M = int::Parse(Console::ReadLine());
     array<int>^ numbers = gcnew array<int>(M);
     array<double>^ P = gcnew array<double>(M);
     array<double>^ L = gcnew array<double>(M);
-    Console::Write("Введiть цiну C (вартiсть 1 т·км): ");
+    Console::Write("Г‚ГўГҐГ¤iГІГј Г¶iГ­Гі C (ГўГ Г°ГІiГ±ГІГј 1 ГІВ·ГЄГ¬): ");
     double C = double::Parse(Console::ReadLine());
-    Console::WriteLine("\nВведiть данi про водiїв:");
+    Console::WriteLine("\nГ‚ГўГҐГ¤iГІГј Г¤Г Г­i ГЇГ°Г® ГўГ®Г¤iВїГў:");
     for (int i = 0; i < M; i++) {
-        Console::Write("Табельний номер водiя #{0}: ", i + 1);
+        Console::Write("Г’Г ГЎГҐГ«ГјГ­ГЁГ© Г­Г®Г¬ГҐГ° ГўГ®Г¤iГї #{0}: ", i + 1);
         numbers[i] = int::Parse(Console::ReadLine());
-        Console::Write("  Вага вантажу (тонн): ");
+        Console::Write("  Г‚Г ГЈГ  ГўГ Г­ГІГ Г¦Гі (ГІГ®Г­Г­): ");
         P[i] = double::Parse(Console::ReadLine());
-        Console::Write(" Вiдстань (км): ");
+        Console::Write(" Г‚iГ¤Г±ГІГ Г­Гј (ГЄГ¬): ");
         L[i] = double::Parse(Console::ReadLine());
     }
-    Console::WriteLine("\nВiдомiсть виплати зарплати");
-    Console::WriteLine("Таб. номер     Зарплата(грн.)");
+    Console::WriteLine("\nГ‚iГ¤Г®Г¬iГ±ГІГј ГўГЁГЇГ«Г ГІГЁ Г§Г Г°ГЇГ«Г ГІГЁ");
+    Console::WriteLine("Г’Г ГЎ. Г­Г®Г¬ГҐГ°     Г‡Г Г°ГЇГ«Г ГІГ (ГЈГ°Г­.)");
     for (int i = 0; i < M; i++) {
         double salary = P[i] * L[i] * C;
         Console::WriteLine("{0,10}    {1,12:F2}", numbers[i], salary);
     }
-    Console::WriteLine("\nГотово! Натиснiсть Enter...");
+    Console::WriteLine("\nГѓГ®ГІГ®ГўГ®! ГЌГ ГІГЁГ±Г­iГ±ГІГј Enter...");
     Console::ReadLine();
     return 0;
 
