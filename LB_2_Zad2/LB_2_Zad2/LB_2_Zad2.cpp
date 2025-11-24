@@ -7,7 +7,7 @@ int main()
 	for (int i = 0; i < SIZE; i++)
 		for (int j = 0; j < SIZE; j++)
 			table[i, j] = (i + 1) * (j + 1);
-	Console::WriteLine("Òàáëèöÿ ìíîæåííÿ 10x10:\n");
+	Console::WriteLine("Ã’Ã Ã¡Ã«Ã¨Ã¶Ã¿ Ã¬Ã­Ã®Ã¦Ã¥Ã­Ã­Ã¿ 10x10:\n");
 	Console::Write("   ");
 	for (int i = 1; i <= SIZE; i++)
 		Console::Write("{0,4}", i);
