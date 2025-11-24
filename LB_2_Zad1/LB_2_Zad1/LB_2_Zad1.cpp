@@ -27,7 +27,7 @@ int main()
     Console::WriteLine("\nÃîòîâî! Íàòèñíiñòü Enter...");
     Console::ReadLine();
     return 0;
-
     return 0;
 }
+
 
